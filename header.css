@@ -1,0 +1,104 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #020031; /* Dark Blue Background */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo (Brand Name) */
+.navbar-brand {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Navigation Links */
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Spacing between nav items */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-link {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-item.active .nav-link {
+    color: #ff6600; /* Orange highlight on hover */
+}
+
+/* Search & Call Button Container */
+.quote_btn-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Search Button */
+.nav_search-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.nav_search-btn:hover {
+    color: #ff6600;
+}
+
+/* Call Button */
+.quote_btn-container a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.quote_btn-container a:hover {
+    color: #ff6600;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .quote_btn-container {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

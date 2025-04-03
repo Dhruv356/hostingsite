@@ -1,0 +1,135 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333;
+}
+
+/* Pricing Section */
+.plans_section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+/* Section Heading */
+.heading_wrapper h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 40px;
+}
+
+/* Pricing Container */
+.plans_container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Individual Pricing Box */
+.plan_box {
+    width: 350px;
+    background: white;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.plan_box:hover {
+    transform: translateY(-5px);
+}
+
+/* Price */
+.plan_details h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #111;
+}
+
+.plan_details span {
+    font-size: 42px;
+    font-weight: bold;
+    color: #111;
+}
+
+/* Plan Name */
+.plan_details h6 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0099ff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* Feature List */
+.plan_features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plan_features li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+/* Button */
+.plan_btn {
+    margin-top: 20px;
+}
+
+.plan_btn a {
+    display: inline-block;
+    background: #ff4d4d;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.plan_btn a:hover {
+    background: #e63939;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .plans_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan_box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading_wrapper h2 {
+        font-size: 28px;
+    }
+
+    .plan_details h2 {
+        font-size: 36px;
+    }
+
+    .plan_details h6 {
+        font-size: 16px;
+    }
+
+    .plan_btn a {
+        font-size: 14px;
+    }
+}
